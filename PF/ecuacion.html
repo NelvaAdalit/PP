@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ a <input type="number" id="a"><br>
+ b <input type="number" id="b"><br>
+ c <input type="number" id="c"><br>
+ <button type="button" onclick="ecuacion()">Calcular raices</button>
+ <div id="Resultado1">Resultado 1</div>
+ <div id="Resultado2">Resultado 2</div>
+
+ <script>
+    function ecuacion(){
+        var a = document.getElementById('a').value;
+        var b = document.getElementById('b').value;
+        var c = document.getElementById('c').value;
+        var resultado1 = document.getElementById('Resultado1');
+        var resultado2 = document.getElementById('Resultado2');
+        var InsideSqrt = b * b - 4 * a * c;
+        if (InsideSqrt > 0) {
+            var raices = [];
+            raices[0] = (-b + Math.sqrt(InsideSqrt)) / (2 * a);
+            raices[1] = (-b - Math.sqrt(InsideSqrt)) / (2 * a);
+
+            for (var i = 0; i < raices.length; i++) {
+                if (i === 0) {
+                    resultado1.innerHTML = "Raiz 1: " + raices[i];
+                    resultado1.style.backgroundColor = 'yellow';
+                } else {
+                    resultado2.innerHTML = "Raiz 2: " + raices[i];
+                    resultado2.style.backgroundColor = 'yellow';
+                }
+            }
+        } else if (InsideSqrt == 0) {
+            var raiz = (-b) / (2 * a);
+            resultado1.innerHTML = "Raiz unica: " + raiz;
+            resultado1.style.backgroundColor = 'yellow';
+            resultado2.innerHTML = "";
+            resultado2.style.backgroundColor = '';
+        } else {
+            resultado1.innerHTML = "Raices imaginarias";
+            resultado1.style.backgroundColor = 'green';
+            resultado2.innerHTML = "";
+            resultado2.style.backgroundColor = '';
+        }
+    }
+ </script>
+
+</body>
+</html>

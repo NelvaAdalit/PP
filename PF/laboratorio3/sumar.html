@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 5px 10px;
+      text-align: center;
+    }
+  </style>
+   <label for="numero">Ingrese un número:</label>
+   <input type="number" id="numero">
+   <button onclick="generarTabla()">Generar tabla</button>
+  <br><br>
+  <label for="color">Color para la columna Resultado:</label>
+  <input type="text" id="color" placeholder="Ej: red, blue, #00ff00">
+  <button onclick="cambiarColor()">Cambiar color</button>
+    <div id="tabla"></div>
+    <script>
+     function generarTabla() {
+      const numero = parseInt(document.getElementById("numero").value);
+      const contenedor = document.getElementById("tabla");
+      contenedor.innerHTML = ""; 
+
+      const tabla = document.createElement("table");
+      const encabezado = document.createElement("tr");
+      const columnas = ["Operador 1", "Operación", "Operador 2", "=", "Resultado"];
+      columnas.forEach(texto => {
+        const th = document.createElement("th");
+        th.textContent = texto;
+        encabezado.appendChild(th);
+      });
+      tabla.appendChild(encabezado);
+
+      for (let i = 1; i <= 10; i++) {
+        const fila = document.createElement("tr");
+
+        const td1 = document.createElement("td");
+        td1.textContent = numero;
+
+        const td2 = document.createElement("td");
+        td2.textContent = "+";
+
+        const td3 = document.createElement("td");
+        td3.textContent = i;
+
+        const td4 = document.createElement("td");
+        td4.textContent = "=";
+        const td5 = document.createElement("td");
+        td5.textContent = numero + i;
+        td5.className = "resultado";
+
+        fila.appendChild(td1);
+        fila.appendChild(td2);
+        fila.appendChild(td3);
+        fila.appendChild(td4);
+        fila.appendChild(td5);
+
+        tabla.appendChild(fila);
+      }
+
+      contenedor.appendChild(tabla);
+    }
+
+    function cambiarColor() {
+      const color = document.getElementById("color").value;
+      const resultados = document.querySelectorAll(".resultado");
+      resultados.forEach(td => {
+        td.style.color = color;
+      });
+    }
+
+    </script>
+</body>
+</html>

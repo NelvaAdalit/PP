@@ -1,0 +1,130 @@
+#superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404040;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logos_redes a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+}
+
+.buscar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.buscar button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+#titulo-barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    background-image: url('imagenes/Negro_25.webp');
+    background-size: 100px;
+    padding: 10px 20px;
+    color: #5d5d5d;
+}
+
+.logo-titulo img {
+    width: 180px;
+    height: auto;
+}
+
+.titulo-texto {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.titulo-texto h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.titulo-texto h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+#menu-horizontal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; 
+  background-color: #5d5d5d;
+  padding: 5px 0;
+  gap: 5px;
+}
+
+.boton-menu {
+  background-color: #f1c40f;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 10px;
+  width: 150px;
+  height: 60px; 
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  white-space: normal;
+  line-height: 1.2;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance; 
+  transition: background-color 0.3s ease;
+}
+
+.boton-menu:hover {
+  background-color: #d4ac0d;
+}.contenedor-principal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+}
+
+#contenido-izquierda {
+  flex: 1;
+}
+
+#calendario img {
+  max-width: 100%;
+  height: auto;
+}
+
+#derecha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+#derecha img {
+  width: 300px;     
+  height: auto;     
+}

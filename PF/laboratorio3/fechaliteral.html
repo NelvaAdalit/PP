@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FECHA LITERAL</title>
+</head>
+<body>
+    <script>
+        function fechaLiteral(fecha) {
+      const dias = [
+        "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez",
+        "once", "doce", "trece", "catorce", "quince", "dieciséis", "diecisiete", "dieciocho", "diecinueve", "veinte",
+        "veintiuno", "veintidós", "veintitrés", "veinticuatro", "veinticinco", "veintiséis", "veintisiete", "veintiocho", "veintinueve", "treinta", "treinta y uno"
+      ];
+
+      const meses = [
+        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+      ];
+
+      const unidades = ["cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve"];
+      const decenas = ["", "diez", "veinte", "treinta", "cuarenta", "cincuenta", "sesenta", "setenta", "ochenta", "noventa"];
+        function anioLiteral(anio) {
+          const n = parseInt(anio, 10);
+          if (Number.isNaN(n)) return 'EL año no es válido';
+          if (n === 0) return 'cero';
+
+          const hasta29 = [
+            'cero','uno','dos','tres','cuatro','cinco','seis','siete','ocho','nueve',
+            'diez','once','doce','trece','catorce','quince','dieciséis','diecisiete','dieciocho','diecinueve',
+            'veinte','veintiuno','veintidós','veintitrés','veinticuatro','veinticinco','veintiséis','veintisiete','veintiocho','veintinueve'
+          ];
+          const centenas = ['','ciento','doscientos','trescientos','cuatrocientos','quinientos','seiscientos','setecientos','ochocientos','novecientos'];
+
+          function hasta99(x) {
+            if (x < 30) return hasta29[x];
+            const t = Math.floor(x / 10);
+            const u = x % 10;
+            if (u === 0) return decenas[t];
+            return decenas[t] + ' y ' + unidades[u];
+          }
+
+          function hasta999(x) {
+            if (x === 0) return '';
+            if (x < 100) return hasta99(x);
+            const c = Math.floor(x / 100);
+            const resto = x % 100;
+            if (c === 1 && resto === 0) return 'cien';
+            const parteCentena = centenas[c];
+            const parteResto = resto === 0 ? '' : ' ' + hasta99(resto);
+            return parteCentena + parteResto;
+          }
+
+          let partesPalabras = [];
+
+          const miles = Math.floor(n / 1000);
+          const resto = n % 1000;
+          if (miles > 0) {
+            if (miles === 1) partesPalabras.push('mil');
+            else partesPalabras.push(hasta999(miles) + ' mil');
+          }
+          if (resto > 0) partesPalabras.push(hasta999(resto));
+
+          return partesPalabras.join(' ').trim();
+        }
+
+         const partes = fecha.split("/");
+         const dia = parseInt(partes[0]);
+         const mes = parseInt(partes[1]);
+  const anio = partes[2];
+
+  const diaLiteral = dias[dia - 1];
+  const mesLiteral = meses[mes - 1];
+  const anioTexto = anioLiteral(anio);
+
+  return `${diaLiteral} de ${mesLiteral} de ${anioTexto}`;
+
+        }
+        const entrada = prompt("Ingrese una fecha en formato dd/mm/aaaa:");
+        const resultado = fechaLiteral(entrada);
+        alert("Fecha literal: " + resultado);
+    </script>
+</body>
+</html>

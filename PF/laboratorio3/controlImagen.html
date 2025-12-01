@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Control de tamaño de imagen</h2>
+
+  <input type="number" id="cantidad"  value="50">
+  <button onclick="Agrandar()">Agrandar</button>
+  <br><br>
+  <button onclick="Reducir()">Reducir</button>
+  <br><br>
+   <img  id="imagen" src="images/larem.jpeg" width:200 >
+  <script>
+     function Agrandar(){
+       const cantidad=parseInt(document.getElementById('cantidad').value);
+       const imagen= document.getElementById('imagen');
+       console.log(imagen);
+       imagen.width += cantidad ;
+     }
+      function Reducir(){
+       const cantidad=parseInt(document.getElementById('cantidad').value);
+       const imagen= document.getElementById('imagen');
+       console.log(imagen);
+       imagen.width -= cantidad ;
+     }
+
+
+
+
+  </script>
+</body>
+</html>

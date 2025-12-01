@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="pregunta2.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="contenedor-encabezado">
+            <div class="logo">
+                <div class="logo-box">
+                    <img src="imagenes/USFX.png" alt="USFX Logo">
+                </div>
+            </div>
+            <h1>Website Name</h1>
+        </header>
+        
+        <div class="contenido-derecho">
+            <nav class="menu-lateral">
+                <ul class="menu-items">
+                    <li class="menu-item"><a href="#">Inicio</a></li>
+                    <li class="menu-item"><a href="#">Formulario</a></li>
+                    <li class="menu-item"><a href="#">Acerca de</a></li>
+                </ul>
+            </nav>
+        
+            <main class="contenido">
+            <header class="encabezado">
+                <h2>Contáctanos</h2>
+            </header>
+            
+            <div class="formulario">
+                <form>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" value="Mora Barrionuevo Nelva Adlit" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" value="adalit.com" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="sitio">Sitio web:</label>
+                        <input type="url" id="sitio" name="sitio" value="http://adalitEve.com">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    
+                    <div class="campo">
+                        <input type="submit" value="Registrar" class="registrar">
+                    </div>
+                </form>
+            </div>
+        </main>
+        </div>
+    </div>
+</body>
+</html>

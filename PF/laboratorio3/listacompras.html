@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+<body>
+  <h2>Lista de Compras</h2>
+  <label for="item">Elemento Lista:</label>
+  <input type="text" id="item">
+
+  <label for="color">Color:</label>
+  <input type="color" id="color" value="#ff0000">
+
+  <button style="border:3px solid blue;background-color: blue; color:white" onclick="agregarElemento()">Añadir</button>
+
+  <ul id="lista">
+
+  </ul>
+
+  <script>
+    function agregarElemento() {
+      const texto = document.getElementById("item").value;
+      const color = document.getElementById("color").value;
+      const li = document.createElement("li");
+      li.textContent = texto;
+      li.style.color = color;
+      document.getElementById("lista").appendChild(li);
+
+      document.getElementById("item").value = "";
+    }
+
+  </script>
+
+</body>
+</html>
