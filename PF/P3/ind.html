@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="menu">
+            <button id="btn1" onclick="javascript:cargarContenidoModal('form_registrar_medicos.html')">Registrar Médico</button>
+            <button onclick="javascript:cargarContenido('leer.php')" id="btn2">Ver Medicos</button>
+            <button onclick="javascript:cargarContenidoModal('form_registrar_pacientes.html')" id="btn3">Registrar Paciente</button>
+            <button onclick="javascript:cargarContenido('leerPaciente.php')" id="btn4">Ver Paciente</button>
+            <button onclick="javascript:cargarContenidoModal('formCitas.php')" id="btn5">Registrar Cita</button>
+            <button onclick="javascript:cargarContenidoModal('leerCitas.php')" id="btn5">Ver Citas</button>
+        </div>
+        <div id="contenido">
+            <h2>Hello usuario! </h2>
+        </div>
+    </div>
+    <div id="modal">  
+        <div id="contenidoModal">
+        </div>
+        <span class="close" onclick="cerrarModal()">X</span>
+    </div>
+    <script src="fetchmedicos.js"></script>
+    <script src="ajaxpacientes.js"></script>
+     <script src="citasfetch.js"></script>
+</body>
+</html>

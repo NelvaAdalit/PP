@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    
+    <form class="form">
+        <div>
+        <label for="tablaDel">Tabla del </label> 
+    <input type="text" id="tablaDel">
+    </div>
+
+     <div class="btn">
+     <div>
+        <input type="radio" name="operacion" value="suma" checked>Suma
+        <input type="radio" name="operacion" value="multiplicar">Multiplicar
+     
+     </div>
+     
+     <div>
+      <input type="radio" name="operacion" value="resta">Resta
+      <input type="radio" name="operacion" value="dividir">Dividir
+      
+     </div>
+
+     </div>
+
+     <div>
+       <label style="margin-left: 10px;" for="hastaElInput">Hasta el </label>
+<input type="text" id="hastaElInput">
+     </div>
+     <div>
+        <button type="button" style="margin-left: 10px;"  onclick="calcularOperacion()">Calcular</button>
+     </div>
+    </form>
+
+        
+
+
+</body>
+</html>

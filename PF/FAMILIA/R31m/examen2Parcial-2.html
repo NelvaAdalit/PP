@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+         
+        }
+        #principal{
+            width: 900px;
+            height: 300px;
+            border: 1px solid blue;
+            margin: 0 auto;
+        }
+        .divmenu{
+            display: flex;
+            width: 900px;
+            height: 50px;
+            margin: 0 auto;
+
+
+        }
+        #menu{
+            width: 80%;
+            border: 1px solid blue;
+
+        }
+        .btnmenu{
+            width: 20%;
+        }
+        #historial{
+            margin: 0 auto;
+            width: 900px;
+            height: 70px;
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="principal"></div>
+        <div class="divmenu">
+                    <div id="menu"></div>
+                    <button  class="btnmenu">Menu</button>
+        </div>
+        </div>
+        <div id="historial"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

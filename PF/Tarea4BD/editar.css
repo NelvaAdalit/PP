@@ -1,0 +1,99 @@
+input[type="file"] {
+    padding: 4.8px 1.6px;
+    font-size: 16px;
+    background: #f3e5f5;
+    color: #4a148c;
+    border: 1.5px solid #ce93d8;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 4.8px 1.6px;
+    font-size: 16px;
+    padding: 4.8px 1.6px;
+    font-size: 16px;
+    border: 1.5px solid #ce93d8;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+  
+textarea[name="descripcion"] {
+    padding: 4.8px 1.6px;
+    font-size: 16px;
+    background: #fff3e0;
+    color: #6a1b9a;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 1.5px solid #ce93d8;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background: #8e24aa;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 16px;
+    
+ 
+}
+input[type="submit"]:hover {
+    background: #4a148c;
+    color: #ffe082;
+}
+
+a {
+    color: #fff;
+    background: #d32f2f;
+    padding: 10px 24px;
+    padding: 11.2px 24p x;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+a:hover {
+    background: #b71c1c;
+    color: #ffe082;
+}
+
+body{
+    padding: 9.6px 19.2px;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+    gap:19.2px;
+    padding: 10px;
+    min-height: 320px;
+    border: 4px solid plum ;
+    border-radius: 5px;
+    
+}
+
+label{
+     font-weight: bold;
+     color: purple;
+     margin-bottom: 3.2px;
+}
+
+h1{
+    text-align: center;
+    color: brown;
+    padding: 8px 16px;
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>2do Parcial - 1</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+<header>
+    Segundo Parcial 1 SIS 256 - Tecnologia y Desarrollo Web
+</header>
+
+<div id="info">
+    Estudiante: Mora Barrionuvo Nelva Adalit &nbsp;&nbsp;|&nbsp;&nbsp; CU: 35-5812
+</div>
+
+<div id="contenedor">
+    <div id="menu">
+        <button  onclick="javascript:cargarContenido('galeria.php')" class="btnMenu" id="btn1">Pregunta 1 </button>
+        <button  onclick="javascript:cargarContenidoModal('form_recetas copy.php')" class="btnMenu" id="btn2">Pregunta 2 </button>
+        <button  onclick="javascript:cargarContenido('imagenControl.html')" class="btnMenu" id="btn3">Pregunta 3 </button>
+        <button onclick="javascript:cargarContenid('temas.html')" class="btnMenu" id="btn4">Pregunta 4 </button>
+        <button onclick="javascript:cargarContenido('listar_recetas.php')" class="btnMenu" id="btn5">Pregunta 5 </button>
+    </div>
+    <div id="contenido">
+        <h2>Bienvenido</h2>
+        <p>Seleccione una opción del menú.</p>
+    </div>
+</div>
+<div id="mensaje">
+   Inicializando...
+</div>
+
+<div id="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); z-index:2000; background-color:rgb(29, 194, 139); padding:20px; border-radius:8px; border:3px solid blue; width:400px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+    <button onclick="cerrarModal()" style="position:absolute; top:10px; right:10px; background:red; color:white; border:none; border-radius:50%; width:30px; height:30px; cursor:pointer; font-size:18px; font-weight:bold;">X</button>
+    <img id="modalImg" style="display:block; margin:0 auto 15px auto; width:320px; height:320px; border-radius:5px;" src="">
+    <h2 id="Titulo" style="text-align:center; margin:10px 0; color:white;"></h2>
+    <h3 id="Tipo" style="text-align:center; margin:10px 0; color:white;"></h3>
+</div>
+
+
+<script src="script.js"></script>
+
+
+
+<div id="modal1">  
+        <div id="contenidoModal">
+        </div>
+        <span class="close" onclick="cerrarModal1()">X</span>
+    </div>
+
+</body>
+</html>

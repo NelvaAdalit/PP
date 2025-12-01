@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escoge un color</h1>
+    <label>Color:</label>
+    <input type="color" id="color">
+    <button type="submit" onclick="AgregarColor()">Añadir color</button>
+    <div  id="gridcontendor" style="display:grid;grid-template-columns: auto auto auto auto; ">
+    </div>
+    <label>Seleccionar color:</label>
+    <select id="selectColor" onchange="seleccionarColor()">
+        <option value="Claro">Claro</option>
+        <option value="Oscuro"> Oscuro</option>
+        <option value="Contraste">Contraste</option>
+        <option value="Pastel">Pastel</option>
+
+    </select>
+
+
+</body>
+</html>

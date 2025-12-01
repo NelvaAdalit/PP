@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="conteiner"  >
+        <div id="menu" class="bg-primary row pt-5 ">
+             
+            <div class="col-1 d-flex justify-content-center  "><img src="imagenes/perfil.jpg" alt="imagen" class="w-25 h-50  "></div>
+            <hr id="sep">
+            <a href="#">Inicio </a>
+            <a href="#">Pregunta #</a>
+             <a onclick="javascript:cargarContenido('listar.php')" href="#">Pregunta 3</a>
+            <a href="#">Pregunta #</a>
+        </div>
+
+        <div id="contenido">
+            <div id="encabezado">
+                <div id="navegacion" >
+                    <a  href="#">Inicio</a>
+                    <a href="#">Pregunta #</a>
+                    <a href="#">Pregunta #</a>
+                    <a onclick="javascript:cargarContenido('listar.php')" href="#">Pregunta 3</a>
+                    <a href="#">Pregunta #</a>
+                </div>
+        
+                <div id="log">
+                    <button class="btn btn-outline-light" id="login" onclick="javascript:cargarModal('form_login.html')">Iniciar Sesion</button>
+                </div>
+            </div>
+            <div id="principal">
+                <div id="datos">
+                 <h1>SIS256 PROGRAMACION WEB</h1>
+                <p>Examen Final</p>
+                <img id="perfil" src="imagenes/perfil.jpg" style="width: 130px; border-radius: 50%; margin: 0 auto; margin-top: 20px;">
+                <p>Carrera</p>
+                <p>Repositorio:<button class="btn btn-outline-primary">haga click aqui</button></p>
+                 </div>
+
+                 <hr id="sep">
+
+                 <div id="sev"><h1>NUESTROS SERVICIOS</h1>
+
+                    <div id="servicios">
+                    
+                    <div id="s">
+                        <h3 id="sc">Consultoria</h3>
+                        <p><strong>Consultoria</strong></p>
+                        <p> Lorem ipsum dolor sit amet  fuga beatae optio eos! Dignissimos dolorem error veniam facilis?</p>
+                    </div>
+                    <div id="s">
+                        <h3 id="sc">Consultoria</h3>
+                        <p><strong>Consultoria</strong></p>
+                        <p> Lorem ipsum dolor sit amet  fuga beatae optio eos! Dignissimos dolorem error veniam facilis?</p>
+                    </div>
+                    <div id="s">
+                        <h3 id="sc">Consultoria</h3>
+                        <p><strong>Consultoria</strong></p>
+                        <p> Lorem ipsum dolor sit amet  fuga beatae optio eos! Dignissimos dolorem error veniam facilis?</p>
+                    </div>
+                 </div> 
+                  </div>
+            <div id="pie">
+                <div id="derechos">
+                    <a href="#">EXAMEN FINAL WEB</a>
+                </div>
+                <div id="der">
+                    <a href="">Facebpok</a>
+                    <a href="">Twiter</a>
+                    <a href="">Link</a>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    
+    <div id="modal">  
+        <div id="contenidoModal">
+        </div>
+        <span class="close" onclick="cerrarModal()">X</span>
+    </div>
+
+
+    
+
+</body>
+</html>

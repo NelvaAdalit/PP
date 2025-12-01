@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            width:800px;
+            height:400px ;
+            display: flex;      
+            margin:  0 auto;
+        }   
+        #principal{
+            width: 80%;
+             border:1px solid green;
+        }
+        #menu{
+            width: 20%;
+            border:1px solid green;
+            background-color: yellow;
+  
+        } 
+
+        #menu button{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            
+        }
+        
+
+       
+        .pie{
+            display: flex;
+            border: 1px solid blue;
+            margin: 0 auto;
+            width: 800px;
+        }
+
+        #mensaje{
+            border:1px solid blue;
+            background-color: yellow;
+            height: 50px;
+            width: 900px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="principal">
+        </div>
+        <div id="menu">
+        </div>
+    </div>
+    <div class="pie">
+      <button style="background-color: rgb(255, 35, 35);color:white;width: 100px;" onclick="javascript:cargarBotones()" >Menu</button>  
+      <div id="mensaje"></div>
+    </div>""
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
+

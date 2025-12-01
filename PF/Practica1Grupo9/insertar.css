@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+
+  border: 2px solid blue;
+  width: 500px;
+  margin:50px auto;
+  height: 150px;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  
+}
+
+.elige{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+select{
+
+    width: 160px;
+    border: 3px solid red;
+    height: 30px;
+}
+
+.botones{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display:flex;
+    justify-content: space-around;
+    
+    
+}
+button[type="submit"]{
+    background-color: #ffc000;
+    width: 100px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid black;
+}
+
+button[type="reset"]{
+    background-color: #c3ff43;
+    border: 2px solid #679467;
+    width: 100px;
+    padding: 5px 10px 5px 5px;
+    box-shadow: 0 0 5px #ffc000,
+                0 0 10px #ffc000,
+                0 0 15px    #ffc000;
+    
+}

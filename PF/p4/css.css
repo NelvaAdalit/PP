@@ -1,0 +1,139 @@
+
+
+
+        #conteiner{
+            width: 1100px;
+            display: flex;
+            flex-direction:row;
+            background-color: rgb(197, 243, 243);
+            margin: 0 auto;
+            margin-top:20px;
+            
+        }
+        
+        #menu{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+            
+        }
+       
+        #contenido{
+            width: 80%;
+            background-color: rgb(171, 171, 187);
+            display: flex;
+            flex-direction: column;
+        }
+       
+        #encabezado{
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+            gap:10px;
+            align-items: center;
+        }
+
+        #pie{
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+        }
+        #derechos{
+            margin-left: 20px;
+        }
+        #der{
+            margin-left: 250px;
+        }
+
+        #log{
+            margin-left: 200px;
+        }
+       #servicios{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+        #s{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 200px;
+        }
+        #principal{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #datos{
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        #navegacion{
+            display: flex;
+            flex-direction: row;
+            gap:15px;
+            align-items: center;
+            margin-left: 5px;
+        }
+        #sep{
+          
+           height: 2px;
+           margin: 10px 0 ;
+           width: 100%;
+          border-top: 5px solid white;
+        }
+        #sev{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        #sc{
+            background-color: red;
+            padding: 15px;
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+        }
+        #s{
+            padding: 5px;
+
+        }
+        #modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #contenidoModal {
+            position: relative;
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: red;
+            position: absolute;
+            top: 250px;
+            left: 550px;
+            font-size: 28px;
+            font-weight: bold;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }

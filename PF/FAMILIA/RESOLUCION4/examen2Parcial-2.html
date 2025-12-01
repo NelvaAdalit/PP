@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        #principal{
+            margin-top: 40px;
+            width: 900px;
+            height: 400px;
+            border: 1px solid blue;
+            display: flex; 
+        }
+        #menu{
+            width: 750px;
+            height: 50px;
+            border: 1px solid blue;
+            background-color: aqua;
+        }
+        #menu button{
+            width: 70px;
+            height: 50px;
+            margin-left: 10px;
+
+        }
+         .btnmenu{
+            width: 150px;
+            height: 53px;
+            background-color: rgb(253, 18, 18);
+            color: white;
+         }
+        #historial{
+            width: 900px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: rgb(255, 218, 8);
+        }
+        .medio{
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            width: 900px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div id="principal"> </div>
+        <div class="medio">
+        <div id="menu"></div>
+        <button class="btnmenu">Menu</button>
+        </div>
+        <div id="historial"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
